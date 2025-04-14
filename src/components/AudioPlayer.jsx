@@ -13,8 +13,8 @@ const AudioPlayer = ({ src, title, icon}) => {
         artist: 'Matteo Dupond 🦇 - Histoires de princesse',   // Replace with actual artist if available
         artwork: [
           {
-            // src: `/icon/${icon}.png`, // Path to your custom image
-            src: `/icon/logo.png`, // Path to your custom image
+            src: `/icon/${icon}.png`, // Path to your custom image
+            // src: `/icon/logo.png`, // Path to your custom image
             sizes: '512x512',      // Ensure the image is at least 512x512
             type: 'image/png',
           },
