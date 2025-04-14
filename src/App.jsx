@@ -26,30 +26,30 @@ const App = () => {
   };
 
   // If not authenticated, display a full-screen password form.
-  if (!authenticated) {
-    return (
-      <div className="flex items-center justify-center h-screen bg-gray-100 dark:bg-gray-900">
-        <form
-          onSubmit={handlePasswordSubmit}
-          className="flex flex-col gap-4 p-8 border rounded-lg shadow-lg bg-white dark:bg-gray-800"
-        >
-          <h2 className="text-2xl font-bold text-center">Enter Date Password</h2>
-          <input
-            type="date"
-            name="password"
-            className="px-4 py-2 border rounded focus:outline-none"
-            required
-          />
-          <button
-            type="submit"
-            className="px-4 py-2 font-semibold text-white bg-blue-500 rounded hover:bg-blue-600"
-          >
-            Unlock
-          </button>
-        </form>
-      </div>
-    );
-  }
+  // if (!authenticated) {
+  //   return (
+  //     <div className="flex items-center justify-center h-screen bg-gray-100 dark:bg-gray-900">
+  //       <form
+  //         onSubmit={handlePasswordSubmit}
+  //         className="flex flex-col gap-4 p-8 border rounded-lg shadow-lg bg-white dark:bg-gray-800"
+  //       >
+  //         <h2 className="text-2xl font-bold text-center">Enter Date Password</h2>
+  //         <input
+  //           type="date"
+  //           name="password"
+  //           className="px-4 py-2 border rounded focus:outline-none"
+  //           required
+  //         />
+  //         <button
+  //           type="submit"
+  //           className="px-4 py-2 font-semibold text-white bg-blue-500 rounded hover:bg-blue-600"
+  //         >
+  //           Unlock
+  //         </button>
+  //       </form>
+  //     </div>
+  //   );
+  // }
 
   // Render the app normally if authenticated.
   return (
