@@ -4,8 +4,29 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
     <title>Histoires de princesse</title>
+    <!-- Preload Media Session Metadata -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        if ('mediaSession' in navigator) {
+          navigator.mediaSession.metadata = new MediaMetadata({
+            title: 'Preloaded Story Title',
+            artist: 'Your Artist Name',
+            album: 'Your Album Name',
+            artwork: [
+              {
+                src: '/icon/logo.png', // Use an absolute URL with HTTPS
+                sizes: '512x512',
+                type: 'image/png'
+              }
+            ]
+          });
+          console.log("Preloaded media metadata set.");
+        } else {
+          console.log("Media Session API not supported.");
+        }
+      });
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
