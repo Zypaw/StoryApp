@@ -45,7 +45,7 @@ const Story = () => {
       {/* Back to Home Button */}
       <button
         onClick={() => navigate("/")}
-        className="mb-4 px-4 py-2 border rounded bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+        className="mb-4 px-4 py-2 border rounded bg-purple-500 text-white hover:bg-purple-600 transition-colors"
       >
         Retour aux Histoires
       </button>
